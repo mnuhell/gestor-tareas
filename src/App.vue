@@ -1,11 +1,15 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app">
+  <div class="container text-center">
+    <div class="logo mb-10">
+      <router-link to="/">
+      <img alt="Vue logo" src="./assets/logotareas.svg" style="width: 250px">
+    </router-link>
     </div>
+    
     <router-view/>
   </div>
+</div>
 </template>
 
 <style>
@@ -15,6 +19,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+img{
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px; 
 }
 
 #nav {
@@ -28,5 +38,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.logo{
+  margin: 30px 0; 
 }
 </style>
